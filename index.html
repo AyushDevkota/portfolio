@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script
+			defer
+			src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/846bf15294.js"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="main.js"></script>
+		<script defer src="gallery.js"></script>
+		<title>Udaya Rana</title>
+	</head>
+	<body>
+		<div class="pt-16">
+			<nav class="bg-white shadow-lg fixed inset-x-0 top-0 h-16 z-50">
+				<div class="max-w-6xl mx-auto px-4">
+					<div class="flex justify-between">
+						<div class="flex space-x-7">
+							<!-- primary nav -->
+							<div class="hidden md:flex items-center space-x-1">
+								<a href="#" class="py-4 px-2 text-gray-500 font-semibold"
+									>Home</a
+								>
+								<a
+									href="#news"
+									class="
+										py-4
+										px-2
+										text-gray-500
+										font-semibold
+										hover:text-green-500
+										transition
+										duration-300
+									"
+									>News and Notices</a
+								>
+								<a
+									href="#photo"
+									class="
+										py-4
+										px-2
+										text-gray-500
+										font-semibold
+										hover:text-green-500
+										transition
+										duration-300
+									"
+									>Photo Gallery</a
+								>
+								<a
+									href="#biography"
+									class="
+										py-4
+										px-2
+										text-gray-500
+										font-semibold
+										hover:text-green-500
+										transition
+										duration-300
+									"
+									>Biography</a
+								>
+								<a
+									href="#contact"
+									class="
+										py-4
+										px-2
+										text-gray-500
+										font-semibold
+										hover:text-green-500
+										transition
+										duration-300
+									"
+									>Contact Us</a
+								>
+							</div>
+						</div>
+						<!-- mobile button goes here -->
+						<div class="md:hidden flex items-center">
+							<button class="outline-none mobile-menu-button">
+								<svg
+									class="w-6 h-6 text-gray-500 hover:text-green-500"
+									x-show="!showMenu"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path d="M4 6h16M4 12h16M4 18h16"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- mobile menu -->
+				<div class="mobile-menu hidden">
+					<ul class="">
+						<li class="active">
+							<a
+								href="#"
+								class="
+									block
+									text-sm
+									px-2
+									py-4
+									text-white
+									bg-green-500
+									font-semibold
+								"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="#news"
+								class="
+									block
+									text-sm
+									px-2
+									py-4
+									hover:bg-green-500
+									transition
+									duration-300
+								"
+								>News and Notices</a
+							>
+						</li>
+						<li>
+							<a
+								href="#photo"
+								class="
+									block
+									text-sm
+									px-2
+									py-4
+									hover:bg-green-500
+									transition
+									duration-300
+								"
+								>Photo Gallery</a
+							>
+						</li>
+						<li>
+							<a
+								href="#biography"
+								class="
+									block
+									text-sm
+									px-2
+									py-4
+									hover:bg-green-500
+									transition
+									duration-300
+								"
+								>Biography</a
+							>
+						</li>
+						<li>
+							<a
+								href="#contact"
+								class="
+									block
+									text-sm
+									px-2
+									py-4
+									hover:bg-green-500
+									transition
+									duration-300
+								"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<header
+				class="lg:h-screen lg:flex lg:items-center text-center sm:text-left"
+			>
+				<!-- Hero -->
+				<div class="container sm:w-9/12 mx-auto md:flex">
+					<div>
+						<img src="img/Udaya_rana_profile.jpg" alt="Udaya Rana" />
+					</div>
+					<div class="px-4 md:pl-10">
+						<h1 class="text-4xl py-2">Udaya Rana</h1>
+						<h3 class="text-lg text-gray-700">Nepali Congress</h3>
+						<p class="py-4">
+							Udaya Shumsher J.B. Rana is a Member of the Parliament who was
+							elected from Lalitpur constituency # 1. He is a prominent and
+							promising youth leader of the Nepali Congress party and also is
+							the President of Nepal Tarun Dal which is the youth organization
+							of the Nepali Congress Party.
+						</p>
+						<button
+							class="
+								bg-blue-500
+								hover:bg-blue-700
+								text-white
+								font-bold
+								py-2
+								px-4
+								rounded
+							"
+						>
+							<a href="#biography">Learn More</a>
+						</button>
+					</div>
+				</div>
+			</header>
+			<!-- News and Notices -->
+			<div id="news" class="pt-16">
+				<section
+					class="container w-9/12 mx-auto text-center sm:text-left mb-20"
+				>
+					<h1 class="text-4xl pb-12 text-center">News and Notices</h1>
+					<div class="md:grid grid-cols-2 gap-6 sm:flex sm:flex-col sm:gap-8">
+						<div class="flex items-center mb-8">
+							<div>
+								<img src="./img/1.jpg" alt="" />
+							</div>
+							<div class="pl-4">
+								<h1 class="text-xl">Title</h1>
+								<p class="text-sm">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+									Nobis et optio officia tempore, ut libero enim asperiores
+									culpa reprehenderit voluptas.
+								</p>
+							</div>
+						</div>
+						<div class="flex items-center mb-8">
+							<div>
+								<img src="./img/1.jpg" alt="" />
+							</div>
+							<div class="pl-4">
+								<h1 class="text-xl">Title</h1>
+								<p class="text-sm">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+									Nobis et optio officia tempore, ut libero enim asperiores
+									culpa reprehenderit voluptas.
+								</p>
+							</div>
+						</div>
+						<div class="flex items-center mb-8">
+							<div>
+								<img src="./img/1.jpg" alt="" />
+							</div>
+							<div class="pl-4">
+								<h1 class="text-xl">Title</h1>
+								<p class="text-sm">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+									Nobis et optio officia tempore, ut libero enim asperiores
+									culpa reprehenderit voluptas.
+								</p>
+							</div>
+						</div>
+						<div class="flex items-center mb-8">
+							<div>
+								<img src="./img/1.jpg" alt="" />
+							</div>
+							<div class="pl-4">
+								<h1 class="text-xl">Title</h1>
+								<p class="text-sm">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+									Nobis et optio officia tempore, ut libero enim asperiores
+									culpa reprehenderit voluptas.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- Photo Gallery -->
+			<div id="photo" class="pt-16">
+				<section
+					class="container w-9/12 mx-auto mb-10 text-center sm:text-left mb-20"
+				>
+					<h1 class="text-4xl text-center pb-12">Photo Gallery</h1>
+					<div class="flex">
+						<img src="./img/1.jpg" alt="" class="w-1/4" />
+						<img src="./img/2.jpg" alt="" class="w-1/4" />
+						<img src="./img/3.jpg" alt="" class="w-1/4" />
+						<img src="./img/4.jpg" alt="" class="w-1/4" />
+					</div>
+					<div class="flex pt-8 justify-center">
+						<button
+							class="
+								bg-blue-500
+								hover:bg-blue-700
+								text-white
+								font-bold
+								py-2
+								px-4
+								rounded
+							"
+						>
+							<a href="gallery.html">View More</a>
+						</button>
+					</div>
+				</section>
+			</div>
+			<!-- Biography -->
+			<div id="biography" class="pt-16">
+				<section class="container w-9/12 mx-auto mb-20">
+					<h1 class="text-4xl text-center pb-12" id="bio-title">Biography</h1>
+					<!-- Accordion -->
+					<div
+						class="bg-white max-w-xl mx-auto mt-8 border border-gray-200"
+						x-data="{selected:null}"
+					>
+						<ul class="shadow-box list-none text-left" id="ul"></ul>
+					</div>
+				</section>
+			</div>
+			<!-- Contact Us -->
+			<div id="contact" class="pt-16">
+				<section class="container w-9/12 mx-auto">
+					<h1 class="text-4xl text-center pb-12">Contact Us</h1>
+					<form class="w-full max-w-lg mx-auto">
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+								<label
+									class="
+										block
+										uppercase
+										tracking-wide
+										text-gray-700 text-xs
+										font-bold
+										mb-2
+									"
+									for="grid-first-name"
+								>
+									First Name
+								</label>
+								<input
+									class="
+										appearance-none
+										block
+										w-full
+										bg-gray-200
+										text-gray-700
+										border
+										rounded
+										py-3
+										px-4
+										mb-3
+										leading-tight
+										focus:outline-none focus:bg-white
+									"
+									id="grid-first-name"
+									type="text"
+									placeholder="First Name"
+								/>
+							</div>
+							<div class="w-full md:w-1/2 px-3">
+								<label
+									class="
+										block
+										uppercase
+										tracking-wide
+										text-gray-700 text-xs
+										font-bold
+										mb-2
+									"
+									for="grid-last-name"
+								>
+									Last Name
+								</label>
+								<input
+									class="
+										appearance-none
+										block
+										w-full
+										bg-gray-200
+										text-gray-700
+										border border-gray-200
+										rounded
+										py-3
+										px-4
+										leading-tight
+										focus:outline-none focus:bg-white focus:border-gray-500
+									"
+									id="grid-last-name"
+									type="text"
+									placeholder="Last Name"
+								/>
+							</div>
+						</div>
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full px-3">
+								<label
+									class="
+										block
+										uppercase
+										tracking-wide
+										text-gray-700 text-xs
+										font-bold
+										mb-2
+									"
+									for="grid-password"
+								>
+									Phone Number
+								</label>
+								<input
+									class="
+										appearance-none
+										block
+										w-full
+										bg-gray-200
+										text-gray-700
+										border border-gray-200
+										rounded
+										py-3
+										px-4
+										mb-3
+										leading-tight
+										focus:outline-none focus:bg-white focus:border-gray-500
+									"
+									id="phone"
+									type="number"
+									placeholder="Phone/Mobile Number"
+								/>
+							</div>
+						</div>
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full px-3">
+								<label
+									class="
+										block
+										uppercase
+										tracking-wide
+										text-gray-700 text-xs
+										font-bold
+										mb-2
+									"
+									for="grid-password"
+								>
+									E-mail
+								</label>
+								<input
+									class="
+										appearance-none
+										block
+										w-full
+										bg-gray-200
+										text-gray-700
+										border border-gray-200
+										rounded
+										py-3
+										px-4
+										mb-3
+										leading-tight
+										focus:outline-none focus:bg-white focus:border-gray-500
+									"
+									id="email"
+									type="email"
+									placeholder="Enter your Email here"
+								/>
+							</div>
+						</div>
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full px-3">
+								<label
+									class="
+										block
+										uppercase
+										tracking-wide
+										text-gray-700 text-xs
+										font-bold
+										mb-2
+									"
+									for="grid-password"
+								>
+									Message
+								</label>
+								<textarea
+									class="
+										no-resize
+										appearance-none
+										block
+										w-full
+										bg-gray-200
+										text-gray-700
+										border border-gray-200
+										rounded
+										py-3
+										px-4
+										mb-3
+										leading-tight
+										focus:outline-none focus:bg-white focus:border-gray-500
+										h-48
+										resize-none
+									"
+									id="message"
+								></textarea>
+							</div>
+						</div>
+						<div class="md:flex md:items-center">
+							<div class="md:w-1/3">
+								<button
+									class="
+										bg-blue-500
+										hover:bg-blue-400
+										text-white
+										font-bold
+										py-2
+										px-4
+										border-b-4 border-blue-700
+										hover:border-blue-500
+										rounded
+									"
+									type="submit"
+								>
+									Submit
+								</button>
+							</div>
+							<div class="md:w-2/3"></div>
+						</div>
+					</form>
+				</section>
+			</div>
+			<!-- Footer -->
+			<footer class="footer bg-white relative pt-1 border-b-2 border-gray-700">
+				<div class="container mx-auto px-6">
+					<div
+						class="mt-16 border-t-2 border-gray-300 flex flex-col items-center"
+					>
+						<div class="sm:w-2/3 text-center py-6">
+							<p class="text-sm text-gray-700 font-bold mb-2">
+								© Udaya Shumsher J.B. Rana <span class="year"></span>
+							</p>
+							<p class="text-sm text-gray-700 font-bold mb-2">
+								Kupandole Hts., Lalitpur Ward – I, Kathmandu, Nepal.
+							</p>
+							<p class="text-sm text-gray-700 font-bold mb-2 pt-6">
+								Powered by ©
+								<a
+									href="https://www.vortexitnepal.com/"
+									class="hover:underline"
+								>
+									Vortex IT Solution Pvt. Ltd.</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

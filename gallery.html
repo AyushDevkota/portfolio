@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script
+			defer
+			src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/846bf15294.js"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="gallery.js"></script>
+		<title>Photo Gallery</title>
+	</head>
+	<body>
+		<div class="pt-20">
+			<nav class="fixed inset-x-0 top-0 z-50 bg-white h-20">
+				<div class="container w-9/12 mx-auto">
+					<div class="flex justify-between">
+						<!-- primary nav -->
+						<div class="hidden md:flex items-center space-x-1">
+							<a
+								href="index.html"
+								class="py-7 px-3 text-gray-500 hover:text-gray-900"
+								>Home</a
+							>
+							<a
+								href="index.html#news"
+								class="py-7 px-3 text-gray-500 hover:text-gray-900"
+								>News and Notices</a
+							>
+							<a
+								href="index.html#photo"
+								class="py-7 px-3 text-gray-500 hover:text-gray-900"
+								>Photo Gallery</a
+							>
+							<a
+								href="index.html#biography"
+								class="py-7 px-3 text-gray-500 hover:text-gray-900"
+								>Biography</a
+							>
+							<a
+								href="index.html#contact"
+								class="py-7 px-3 text-gray-500 hover:text-gray-900"
+								>Contact Us</a
+							>
+						</div>
+						<!-- mobile button goes here -->
+						<div class="md:hidden flex items-center bg-blue-600">
+							<button class="mobile-menu-button focus:outline-none">
+								<i class="fas fa-bars"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- mobile menu -->
+				<div class="mobile-menu hidden md:hidden">
+					<a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+					<a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>Contact</a
+					>
+					<a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>Pricing</a
+					>
+					<a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>Features</a
+					>
+				</div>
+			</nav>
+
+			<!-- Photo Gallery -->
+			<div class="container mx-auto px-4">
+				<section class="py-8 px-4">
+					<div class="flex flex-wrap -mx-4 -mb-8" id="image-container"></div>
+				</section>
+			</div>
+			<!-- Footer -->
+			<footer class="footer bg-white relative pt-1 border-b-2 border-gray-700">
+				<div class="container mx-auto px-6">
+					<div
+						class="mt-16 border-t-2 border-gray-300 flex flex-col items-center"
+					>
+						<div class="sm:w-2/3 text-center py-6">
+							<p class="text-sm text-gray-700 font-bold mb-2">
+								© Udaya Shumsher J.B. Rana <span class="year"></span>
+							</p>
+							<p class="text-sm text-gray-700 font-bold mb-2">
+								Kupandole Hts., Lalitpur Ward – I, Kathmandu, Nepal.
+							</p>
+							<p class="text-sm text-gray-700 font-bold mb-2 pt-6">
+								Powered by ©
+								<a
+									href="https://www.vortexitnepal.com/"
+									class="hover:underline"
+								>
+									Vortex IT Solution Pvt. Ltd.</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
