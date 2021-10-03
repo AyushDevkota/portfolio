@@ -43,7 +43,6 @@ const pic = [
 
 function createImages(arr) {
 	const img = document.querySelector("#image-container");
-	console.log(img);
 	let htmlImg = "";
 	arr.forEach((item) => {
 		htmlImg += `
@@ -51,7 +50,6 @@ function createImages(arr) {
 			<img class="rounded shadow-md" src="${item.src}" alt="${item.caption}"/>
 			<p class="text-center text-gray-600 pt-3">${item.caption}</p>
 		</div>`;
-		console.log(item.src);
 	});
 	img.insertAdjacentHTML("beforeend", htmlImg);
 }

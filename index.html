@@ -20,7 +20,7 @@
 	<body>
 		<div class="pt-16">
 			<nav class="bg-white shadow-lg fixed inset-x-0 top-0 h-16 z-50">
-				<div class="max-w-6xl mx-auto px-4">
+				<div class="max-w-6xl mx-auto container w-9/12 mx-auto">
 					<div class="flex justify-between">
 						<div class="flex space-x-7">
 							<!-- primary nav -->
@@ -84,7 +84,7 @@
 						</div>
 						<!-- mobile button goes here -->
 						<div class="md:hidden flex items-center">
-							<button class="outline-none mobile-menu-button">
+							<button class="outline-none mobile-menu-button pt-4">
 								<svg
 									class="w-6 h-6 text-gray-500 hover:text-green-500"
 									x-show="!showMenu"
@@ -102,80 +102,28 @@
 					</div>
 				</div>
 				<!-- mobile menu -->
-				<div class="mobile-menu hidden">
+				<div class="mobile-menu hidden h-70 bg-white">
 					<ul class="">
-						<li class="active">
-							<a
-								href="#"
-								class="
-									block
-									text-sm
-									px-2
-									py-4
-									text-white
-									bg-green-500
-									font-semibold
-								"
-								>Home</a
-							>
+						<li>
+							<a href="#" class="block text-sm px-2 py-4 font-semibold">Home</a>
 						</li>
 						<li>
-							<a
-								href="#news"
-								class="
-									block
-									text-sm
-									px-2
-									py-4
-									hover:bg-green-500
-									transition
-									duration-300
-								"
+							<a href="#news" class="block text-sm px-2 py-4 font-semibold"
 								>News and Notices</a
 							>
 						</li>
 						<li>
-							<a
-								href="#photo"
-								class="
-									block
-									text-sm
-									px-2
-									py-4
-									hover:bg-green-500
-									transition
-									duration-300
-								"
+							<a href="#photo" class="block text-sm px-2 py-4 font-semibold"
 								>Photo Gallery</a
 							>
 						</li>
 						<li>
-							<a
-								href="#biography"
-								class="
-									block
-									text-sm
-									px-2
-									py-4
-									hover:bg-green-500
-									transition
-									duration-300
-								"
+							<a href="#biography" class="block text-sm px-2 py-4 font-semibold"
 								>Biography</a
 							>
 						</li>
 						<li>
-							<a
-								href="#contact"
-								class="
-									block
-									text-sm
-									px-2
-									py-4
-									hover:bg-green-500
-									transition
-									duration-300
-								"
+							<a href="#contact" class="block text-sm px-2 py-4 font-semibold"
 								>Contact Us</a
 							>
 						</li>
@@ -545,6 +493,7 @@
 								<a
 									href="https://www.vortexitnepal.com/"
 									class="hover:underline"
+									target="_blank"
 								>
 									Vortex IT Solution Pvt. Ltd.</a
 								>

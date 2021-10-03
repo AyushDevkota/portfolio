@@ -13,62 +13,133 @@
 			src="https://kit.fontawesome.com/846bf15294.js"
 			crossorigin="anonymous"
 		></script>
+		<script defer src="main.js"></script>
 		<script defer src="gallery.js"></script>
 		<title>Photo Gallery</title>
 	</head>
 	<body>
-		<div class="pt-20">
-			<nav class="fixed inset-x-0 top-0 z-50 bg-white h-20">
-				<div class="container w-9/12 mx-auto">
+		<div class="pt-16">
+			<nav class="bg-white shadow-lg fixed inset-x-0 top-0 h-16 z-50">
+				<div class="max-w-6xl mx-auto px-4">
 					<div class="flex justify-between">
-						<!-- primary nav -->
-						<div class="hidden md:flex items-center space-x-1">
-							<a
-								href="index.html"
-								class="py-7 px-3 text-gray-500 hover:text-gray-900"
-								>Home</a
-							>
-							<a
-								href="index.html#news"
-								class="py-7 px-3 text-gray-500 hover:text-gray-900"
-								>News and Notices</a
-							>
-							<a
-								href="index.html#photo"
-								class="py-7 px-3 text-gray-500 hover:text-gray-900"
-								>Photo Gallery</a
-							>
-							<a
-								href="index.html#biography"
-								class="py-7 px-3 text-gray-500 hover:text-gray-900"
-								>Biography</a
-							>
-							<a
-								href="index.html#contact"
-								class="py-7 px-3 text-gray-500 hover:text-gray-900"
-								>Contact Us</a
-							>
+						<div class="flex space-x-7">
+							<!-- primary nav -->
+							<div class="hidden md:flex items-center space-x-1">
+								<a
+									href="index.html"
+									class="py-4 px-2 text-gray-500 font-semibold"
+									>Home</a
+								>
+								<a
+									href="index.html#news"
+									class="
+										py-4
+										px-2
+										text-gray-500
+										font-semibold
+										hover:text-green-500
+										transition
+										duration-300
+									"
+									>News and Notices</a
+								>
+								<a
+									href="index.html#photo"
+									class="
+										py-4
+										px-2
+										text-gray-500
+										font-semibold
+										hover:text-green-500
+										transition
+										duration-300
+									"
+									>Photo Gallery</a
+								>
+								<a
+									href="index.html#biography"
+									class="
+										py-4
+										px-2
+										text-gray-500
+										font-semibold
+										hover:text-green-500
+										transition
+										duration-300
+									"
+									>Biography</a
+								>
+								<a
+									href="index.html#contact"
+									class="
+										py-4
+										px-2
+										text-gray-500
+										font-semibold
+										hover:text-green-500
+										transition
+										duration-300
+									"
+									>Contact Us</a
+								>
+							</div>
 						</div>
 						<!-- mobile button goes here -->
-						<div class="md:hidden flex items-center bg-blue-600">
-							<button class="mobile-menu-button focus:outline-none">
-								<i class="fas fa-bars"></i>
+						<div class="md:hidden flex items-center">
+							<button class="outline-none mobile-menu-button pt-4">
+								<svg
+									class="w-6 h-6 text-gray-500 hover:text-green-500"
+									x-show="!showMenu"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path d="M4 6h16M4 12h16M4 18h16"></path>
+								</svg>
 							</button>
 						</div>
 					</div>
 				</div>
 				<!-- mobile menu -->
-				<div class="mobile-menu hidden md:hidden">
-					<a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
-					<a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
-						>Contact</a
-					>
-					<a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
-						>Pricing</a
-					>
-					<a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
-						>Features</a
-					>
+				<div class="mobile-menu hidden h-70 bg-white">
+					<ul class="">
+						<li>
+							<a href="index.html" class="block text-sm px-2 py-4 font-semibold"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="index.html#news"
+								class="block text-sm px-2 py-4 font-semibold"
+								>News and Notices</a
+							>
+						</li>
+						<li>
+							<a
+								href="index.html#photo"
+								class="block text-sm px-2 py-4 font-semibold"
+								>Photo Gallery</a
+							>
+						</li>
+						<li>
+							<a
+								href="index.html#biography"
+								class="block text-sm px-2 py-4 font-semibold"
+								>Biography</a
+							>
+						</li>
+						<li>
+							<a
+								href="index.html#contact"
+								class="block text-sm px-2 py-4 font-semibold"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
 				</div>
 			</nav>
 
@@ -96,6 +167,7 @@
 								<a
 									href="https://www.vortexitnepal.com/"
 									class="hover:underline"
+									target="_blank"
 								>
 									Vortex IT Solution Pvt. Ltd.</a
 								>
